@@ -1,0 +1,8 @@
+ dfu-util -l
+ dfu-util -a 0 -d 0483:DF11 -s 0x8000000:leave -D ./berdox_108whitebirds.bin
+
+
+qmk c2json -km default -kb berdox/108whitebirds /home/cody/qmk_firmware/keyboards/berdox/108whitebirds/keymaps/default/keymap.c -o /home/cody/qmk_firmware/keyboards/berdox/108whitebirds/keymaps/default/output.json
+
+
+qmk compile -kb berdox/108whitebirds -km default
